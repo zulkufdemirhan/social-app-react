@@ -18,6 +18,9 @@
      -I could add a few components for other icons and they may have other features.
      -I could create an input to change the information I pulled from the user APIs through the application. 
      -Finally, it would be sweet to receive notifications with toast messages.
+     
+     
+ Link of the App : https://www.linkedin.com/feed/update/urn:li:ugcPost:6918378983701028864/
 
 
 
