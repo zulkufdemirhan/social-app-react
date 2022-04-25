@@ -1,30 +1,19 @@
 import React from 'react'
-import HeaderTop from './Header';
+import {Leftbar,Rightbar,Article,LoginPanel,HeaderTop} from './components';
 import {useState} from 'react'
 import './App.css';
-import LoginPanel from './LoginPanel';
 import photo from './elon.jpg'
 import foto from './zd.jpg'
-import Article from './Article';
-import Leftbar from './Leftbar';
-import Rightbar from './Rightbar';
-
-
 
 function App() {
-
   const adminUser= {
     email:"admin@admin.com",
     password:"admin123"
   }
-
   const [user,setUser]=useState({name:"" , email:""});
   const [error,setError]=useState("");
-
   const Login = details => {
     console.log(details)
-
-
   if(details.email == adminUser.email && details.password == adminUser.password){
     console.log("details works")
     setUser({
@@ -42,14 +31,10 @@ function App() {
       email:""
     })
   }
-
 // !--------------------------------------------------------
-
 function bildirim (e){
-
     const notificationBox = document.querySelector('.notificationBox');
     const bildirim = document.querySelector('.bildirim');
-
     const item =e.target;
 
     if(item.classList[0] === 'bang' ){  
@@ -57,9 +42,7 @@ function bildirim (e){
       notificationBox.style.display="flex";
       bildirim.style.display="none" ;
       }
-      
 }
-
 function exit (e){
   const notificationBox = document.querySelector('.notificationBox');
   const bildirim = document.querySelector('.bildirim');
@@ -67,18 +50,13 @@ function exit (e){
   if(item.classList[0] === 'exit' ){
     console.log("out")
     notificationBox.style.display="none";
-    
     }
 }
-
 // !--------------------------------------------------------
-
 return (
-
     <div className='container'>
         <HeaderTop deneme={bildirim} />
         <div className='notificationBox'>
-
               <li className='liList'>  
               <img src={foto}/>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
@@ -89,7 +67,6 @@ return (
               </li>
               <i className='exit fa-solid fa-chevron-right' onClick={exit} ></i>
         </div>
-
         {(user.email != "") ? (
           <div className='mainPage'>
               <div className='cıkıs'>
@@ -98,15 +75,12 @@ return (
                   <h5>Logout</h5><i class="fa-solid fa-right-from-bracket" onClick={Logout} ></i>
               </div>
                   <div className='gövde'> 
-                      
                       <div className='leftbar'>
                           <Leftbar/>
                       </div>
-
                       <div className='story'>
                           <Article/>
                       </div>
-
                       <div className='rightbar'>
                           <Rightbar/>
                       </div>
@@ -115,11 +89,9 @@ return (
         ) : (   
             <LoginPanel Login={Login}  error={error} /> 
         )}
-
     </div>
   )
 }  
-
 export default App;
 
 

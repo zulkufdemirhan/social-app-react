@@ -14,7 +14,6 @@ export default function Rightbar() {
   useEffect(()=>{
     getApi()
   },[])
-
   // !--------------------------------------------------------
 const çevrimiçibox = document.querySelector('.çevrimiçibox');
 
@@ -24,8 +23,6 @@ function aç (e) {
     çevrimiçibox.style.display="flex";
   }
 }
-
-
   return (
     <div className='onlinebar'>
         <div className='onlinebox' onClick={aç} > <span className='çevrimiçi'></span>Online (10)</div>
