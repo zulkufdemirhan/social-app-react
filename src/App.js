@@ -1,5 +1,9 @@
 import React from 'react'
-import {Leftbar,Rightbar,Article,LoginPanel,HeaderTop} from './components';
+import {Leftbar} from './components/Leftbar';
+import {Rightbar} from './components/Rightbar'
+import {Article} from './components/Article'
+import {LoginPanel} from './components/LoginPanel'
+import {HeaderTop} from './components/Header'
 import {useState} from 'react'
 import './App.css';
 import photo from './photos/elon.jpg'
@@ -13,15 +17,12 @@ function App() {
   const [user,setUser]=useState({name:"" , email:""});
   const [error,setError]=useState("");
   const Login = details => {
-    console.log(details)
   if(details.email == adminUser.email && details.password == adminUser.password){
-    console.log("details works")
     setUser({
       name : details.name,
       email: details.email
     });
   }else{
-    console.log("the person has not match !")
     setError("The person has not match !")
   }
 }
@@ -38,7 +39,6 @@ function bildirim (e){
     const item =e.target;
 
     if(item.classList[0] === 'bang' ){  
-      console.log("it works")
       notificationBox.style.display="flex";
       bildirim.style.display="none" ;
       }
@@ -48,7 +48,6 @@ function exit (e){
   const bildirim = document.querySelector('.bildirim');
   const item = e.target;
   if(item.classList[0] === 'exit' ){
-    console.log("out")
     notificationBox.style.display="none";
     }
 }
