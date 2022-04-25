@@ -52,7 +52,7 @@ function exit (e){
     notificationBox.style.display="none";
     }
 }
-// !-------------------------------------------------------
+// !--------------------------------------------------------
 return (
     <div className='container'>
         <HeaderTop deneme={bildirim} />
