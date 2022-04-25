@@ -6,7 +6,6 @@ import OnlineFriends from './OnlineFriends';
 
 export default function Rightbar() {
   const [online,setOnline]=useState([]);
-
   const getApi = async ()=>{
     const response = await axios.get("https://randomuser.me/api/?results=10")
     setOnline(response.data.results)

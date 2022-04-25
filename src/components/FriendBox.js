@@ -4,7 +4,6 @@ import './App.css';
 export default function FriendBox({data}) {
 return (
     <div className='datafriend'>
-    
         <img src={data.picture.medium} />
         <p className='apidata'>{data.name.first} {data.name.last} </p>
         <p className='apidata'>{data.location.country}</p>
