@@ -2,8 +2,8 @@ import React from 'react'
 import {Leftbar,Rightbar,Article,LoginPanel,HeaderTop} from './components';
 import {useState} from 'react'
 import './App.css';
-import photo from './elon.jpg'
-import foto from './zd.jpg'
+import photo from './photos/elon.jpg'
+import foto from './photos/zd.jpg'
 
 function App() {
   const adminUser= {
