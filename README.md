@@ -1,8 +1,8 @@
 # How I workerd on this project
 
-     -Firstly my goal was to check what I learned I thought that doing a small study with many components and 
-     details would help me understand what I learned and help me simulate the process of preparing a project 
-     a little bit.I observed what I did well and needed to improve.
+     -My purpose in doing this study was to check what I learned. I thought of doing a small multi-component study and
+      details helped me understand what I have learned and simulate the process of preparing a project
+      a little. I observed what I did well and what I needed to improve.
       
      -Before I started working, I took the app apart and went through it step-by-step. This helped 
      me to work in a controlled and orderly manner.
