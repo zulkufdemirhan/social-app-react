@@ -31,7 +31,7 @@ function App() {
       email:""
     })
   }
-// !--------------------------------------------------------
+// !-------------------------------------------------------
 function bildirim (e){
     const notificationBox = document.querySelector('.notificationBox');
     const bildirim = document.querySelector('.bildirim');
@@ -52,7 +52,7 @@ function exit (e){
     notificationBox.style.display="none";
     }
 }
-// !--------------------------------------------------------
+// !-------------------------------------------------------
 return (
     <div className='container'>
         <HeaderTop deneme={bildirim} />
